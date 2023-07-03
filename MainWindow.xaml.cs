@@ -148,6 +148,7 @@ namespace WpfApp1
         {
             AnimateButtonSize(DefaultWidth, DefaultHeight, 1);
             AnimateButtonColor("#FF6B0DF9", 0.5);
+            //asdf
         }
 
         private void AnimateButtonSize(double targetWidth, double targetHeight, double durationSeconds)
