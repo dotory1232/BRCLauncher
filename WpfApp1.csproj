@@ -9,7 +9,17 @@
 
   <ItemGroup>
     <None Remove="dc4LABqni.png" />
+    <None Remove="Fonts\Pretendard-Black.otf" />
+    <None Remove="Fonts\Pretendard-Bold.otf" />
+    <None Remove="Fonts\Pretendard-ExtraBold.otf" />
+    <None Remove="Fonts\Pretendard-ExtraLight.otf" />
+    <None Remove="Fonts\Pretendard-Light.otf" />
+    <None Remove="Fonts\Pretendard-Medium.otf" />
+    <None Remove="Fonts\Pretendard-Regular.otf" />
+    <None Remove="Fonts\Pretendard-SemiBold.ttf" />
+    <None Remove="Fonts\Pretendard-Thin.otf" />
     <None Remove="maxresdefault.jpg" />
+    <None Remove="windowsredstone.0.0.1428426317.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +30,35 @@
 
   <ItemGroup>
     <Resource Include="dc4LABqni.png" />
+    <Resource Include="Fonts\Pretendard-Black.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-Bold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-ExtraBold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-ExtraLight.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-Light.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-Medium.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-Regular.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Pretendard-Thin.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="maxresdefault.jpg" />
+    <Resource Include="windowsredstone.0.0.1428426317.jpg" />
   </ItemGroup>
 
 </Project>

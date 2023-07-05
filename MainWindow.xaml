@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1098" ResizeMode="NoResize" WindowStyle="None">
     <Grid Height="720" Background="#FF191919">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Image Height="384" VerticalAlignment="Top" Source="/maxresdefault.jpg" Stretch="UniformToFill">
             <Image.BitmapEffect>
                 <BlurBitmapEffect x:Name="blurBitmapEffect"
@@ -15,8 +18,8 @@
         </Image>
         <Rectangle HorizontalAlignment="Center" Height="72" Stroke="Black" VerticalAlignment="Top" Width="1098" Fill="Black"/>
         <Label Content="Butteracking" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="Pretendard Black" Foreground="White"/>
-        <Button x:Name="Play" Content="Launch" HorizontalAlignment="Center" Margin="0,152,0,0" VerticalAlignment="Top" Height="76" Width="295" Background="#FF6B0DF9" Foreground="White" FontSize="30" FontFamily="Pretendard SemiBold" BorderBrush="{x:Null}" BorderThickness="2,2,2,2" Click="Button_Click">
-            
+        <Button x:Name="Play" Content="Launch" HorizontalAlignment="Center" Margin="0,152,0,0" VerticalAlignment="Top" Height="76" Width="294" Background="#FF6B0DF9" Foreground="White" FontSize="30" FontFamily="Pretendard SemiBold" BorderBrush="{x:Null}" BorderThickness="2,2,2,2" Click="Button_Click">
+
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -38,16 +41,13 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label Content="Launcher" HorizontalAlignment="Left" Margin="213,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="Pretendard" Foreground="White"/>
+        <Label Content="Launcher" HorizontalAlignment="Left" Margin="208,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="Pretendard" Foreground="White"/>
         <Rectangle x:Name="CloseButton" HorizontalAlignment="Left" Height="35" Margin="1040,20,0,0" VerticalAlignment="Top" Width="35" Fill="#FF4E4E4E" RadiusX="5" RadiusY="5"/>
-        <Rectangle HorizontalAlignment="Left" Height="244" Margin="28,410,0,0" Stroke="Black" VerticalAlignment="Top" Width="330" Fill="#FF5D5D5D" RadiusX="20" RadiusY="20"/>
-        <Rectangle HorizontalAlignment="Center" Height="244" Margin="0,410,0,0" Stroke="Black" VerticalAlignment="Top" Width="330" Fill="#FF5D5D5D" RadiusX="20" RadiusY="20"/>
-        <Rectangle Height="244" Margin="740,410,28,0" Stroke="Black" VerticalAlignment="Top" Fill="#FF5D5D5D" RadiusX="20" RadiusY="20"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="21,360,0,0" VerticalAlignment="Top" Width="60"/>
         <Button Content="Home" HorizontalAlignment="Left" Margin="402,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard"/>
-        <Button Content="Settinng" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="76" FontSize="18" FontFamily="Pretendard"/>
+        <Button Content="Settinng" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="76" FontSize="18" FontFamily="Pretendard" Click="Button_Click_1"/>
         <Button Content="About" HorizontalAlignment="Left" Margin="628,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard"/>
-        <Rectangle HorizontalAlignment="Left" Height="2" Margin="1049,36,0,0" Stroke="White" VerticalAlignment="Top" Width="17" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="2" Margin="1050,37,0,0" Stroke="White" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -57,15 +57,16 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="2" Margin="1049,36,0,0" Stroke="White" VerticalAlignment="Top" Width="17" RenderTransformOrigin="0.5,0.5">
+        <Rectangle HorizontalAlignment="Left" Height="2" Margin="1050,37,0,0" Stroke="White" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="133.223"/>
+                    <RotateTransform Angle="132.665"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+        <Frame x:Name="Panel" Content="Frame" Margin="0,384,0,0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

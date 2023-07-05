@@ -1,0 +1,51 @@
+﻿<Page x:Class="WpfApp1.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="336" d:DesignWidth="1098"
+      Title="Page1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Center" Height="101" Margin="0,20,0,0" VerticalAlignment="Top" Width="1038" Fill="Black" RadiusY="15" RadiusX="15"/>
+        <Rectangle HorizontalAlignment="Center" Height="210" VerticalAlignment="Top" Width="1038" Fill="#FF1F1F1F" RadiusY="15" RadiusX="15" Margin="0,106,0,0"/>
+        <Rectangle HorizontalAlignment="Center" Height="20" VerticalAlignment="Top" Width="1038" Fill="#FF1F1F1F" Margin="0,101,0,0"/>
+        <Image HorizontalAlignment="Left" Height="77" Margin="345,20,0,0" VerticalAlignment="Top" Width="76" Source="/windowsredstone.0.0.1428426317.jpg"/>
+        <Label Content="CLIENT SETTINGS" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="White"/>
+        <Label Content="Contains settings for butterracking clients" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
+        <Label HorizontalAlignment="Left" Margin="129,121,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="White" Content="Resolution"/>
+        <Label x:Name="resolution" Content="1920 x 1080" HorizontalAlignment="Left" Margin="144,251,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
+        <Label HorizontalAlignment="Center" Margin="0,121,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="White" Content="RAM Setting"/>
+        <Label x:Name="RamText" Content="6000 MB" HorizontalAlignment="Center" Margin="0,216,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
+        <Label HorizontalAlignment="Left" Margin="797,121,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="#FF888888" Content="Minecraft file location" Background="#00000000"/>
+        <Label Content="Do not set this option unless you are a Pro" HorizontalAlignment="Left" Margin="776,150,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FF505050" FontSize="14"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Margin="767,188,0,0" TextWrapping="Wrap" Text="This option is in beta" VerticalAlignment="Top" Width="286" Height="28" FontSize="20" FontFamily="/mineUtils;component\Fonts\#Pretendard Light" Background="#FF313131" Foreground="#FF7D7D7D" BorderBrush="#FF313131">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="6"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Client resolution" HorizontalAlignment="Left" Margin="132,150,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
+        <Label Content="Client ram settings" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14" Margin="0,150,0,0"/>
+        <Button x:Name="Edit_Button" Content="Save" HorizontalAlignment="Left" Margin="959,44,0,0" VerticalAlignment="Top" Height="29" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Width="85" Foreground="White" FontFamily="/WpfApp1;component\Fonts\#Pretendard" FontSize="14" Click="Save" Background="#FF6E6D70" BorderThickness="2,2,2,2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="6"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Slider x:Name="Height" HorizontalAlignment="Left" Margin="100,193,0,0" VerticalAlignment="Top" Width="174" Maximum="1920" ValueChanged="Height_ValueChanged" SmallChange="1" IsSnapToTickEnabled="True"/>
+
+        <Slider x:Name="Width" HorizontalAlignment="Left" Margin="100,220,0,0" VerticalAlignment="Top" Width="174" Maximum="1080" ValueChanged="Width_ValueChanged" SmallChange="1" IsSnapToTickEnabled="True"/>
+        <Slider x:Name="RamSlider" HorizontalAlignment="Center" Margin="0,193,0,0" VerticalAlignment="Top" Width="174" Maximum="64000" ValueChanged="Ram_ValueChanged" SmallChange="1" IsSnapToTickEnabled="True" Minimum="2000" Value="6000"/>
+    </Grid>
+</Page>
