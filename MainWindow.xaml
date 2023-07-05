@@ -44,9 +44,73 @@
         <Label Content="Launcher" HorizontalAlignment="Left" Margin="208,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="Pretendard" Foreground="White"/>
         <Rectangle x:Name="CloseButton" HorizontalAlignment="Left" Height="35" Margin="1040,20,0,0" VerticalAlignment="Top" Width="35" Fill="#FF4E4E4E" RadiusX="5" RadiusY="5"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="21,360,0,0" VerticalAlignment="Top" Width="60"/>
-        <Button Content="Home" HorizontalAlignment="Left" Margin="402,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard"/>
-        <Button Content="Settinng" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="76" FontSize="18" FontFamily="Pretendard" Click="Button_Click_1"/>
-        <Button Content="About" HorizontalAlignment="Left" Margin="628,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard"/>
+        <Button Content="Home" HorizontalAlignment="Left" Margin="402,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard" Click="Button_Click_2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+                <Style TargetType="Button">
+                    <Setter Property="OverridesDefaultStyle" Value="True"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Setting" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="76" FontSize="18" FontFamily="Pretendard" Click="Button_Click_1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+                <Style TargetType="Button">
+                    <Setter Property="OverridesDefaultStyle" Value="True"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="About" HorizontalAlignment="Left" Margin="628,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+                <Style TargetType="Button">
+                    <Setter Property="OverridesDefaultStyle" Value="True"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="15">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+
         <Rectangle HorizontalAlignment="Left" Height="2" Margin="1050,37,0,0" Stroke="White" VerticalAlignment="Top" Width="16" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>

@@ -1,0 +1,27 @@
+﻿<Page x:Class="WpfApp1.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="336" d:DesignWidth="1098"
+      Title="Page2">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Left" Height="292" VerticalAlignment="Center" Width="320" Fill="#FF1F1F1F" RadiusY="15" RadiusX="15" Margin="30,0,0,0"/>
+            <Label HorizontalAlignment="Left" Margin="45,62,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="White" Content="Burtteraking Launcher"/>
+            <Label Content="2023  7  05" HorizontalAlignment="Left" Margin="45,35,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
+            <Rectangle HorizontalAlignment="Center" Height="292" VerticalAlignment="Center" Width="320" Fill="#FF171717" RadiusY="15" RadiusX="15"/>
+            <Rectangle HorizontalAlignment="Left" Height="292" VerticalAlignment="Center" Width="320" Fill="#FF171717" RadiusY="15" RadiusX="15" Margin="748,0,0,0"/>
+            <Label HorizontalAlignment="Left" Margin="45,103,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="White" Content="Burtteraking Launcher&#10;Beta Open. "/>
+        </Grid>
+    </Grid>
+</Page>

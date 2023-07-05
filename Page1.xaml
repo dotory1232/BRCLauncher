@@ -18,7 +18,7 @@
         <Rectangle HorizontalAlignment="Center" Height="101" Margin="0,20,0,0" VerticalAlignment="Top" Width="1038" Fill="Black" RadiusY="15" RadiusX="15"/>
         <Rectangle HorizontalAlignment="Center" Height="210" VerticalAlignment="Top" Width="1038" Fill="#FF1F1F1F" RadiusY="15" RadiusX="15" Margin="0,106,0,0"/>
         <Rectangle HorizontalAlignment="Center" Height="20" VerticalAlignment="Top" Width="1038" Fill="#FF1F1F1F" Margin="0,101,0,0"/>
-        <Image HorizontalAlignment="Left" Height="77" Margin="345,20,0,0" VerticalAlignment="Top" Width="76" Source="/windowsredstone.0.0.1428426317.jpg"/>
+        <Image HorizontalAlignment="Left" Height="77" Margin="64,20,0,0" VerticalAlignment="Top" Width="76" Source="/windowsredstone.0.0.1428426317.jpg"/>
         <Label Content="CLIENT SETTINGS" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="White"/>
         <Label Content="Contains settings for butterracking clients" HorizontalAlignment="Center" Margin="0,63,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
         <Label HorizontalAlignment="Left" Margin="129,121,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="White" Content="Resolution"/>

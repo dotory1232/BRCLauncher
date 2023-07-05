@@ -43,10 +43,22 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            IntPtr hWnd = new WindowInteropHelper(GetWindow(this)).EnsureHandle();
-            var attribute = DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE;
-            var preference = DWM_WINDOW_CORNER_PREFERENCE.DWMWCP_ROUND;
-            DwmSetWindowAttribute(hWnd, attribute, ref preference, sizeof(uint));
+
+            Version win11Version = new Version(10, 0, 22000, 0);
+            Version osVersion = Environment.OSVersion.Version;
+            if (osVersion >= win11Version)
+            {
+                IntPtr hWnd = new WindowInteropHelper(GetWindow(this)).EnsureHandle();
+                var attribute = DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE;
+                var preference = DWM_WINDOW_CORNER_PREFERENCE.DWMWCP_ROUND;
+                DwmSetWindowAttribute(hWnd, attribute, ref preference, sizeof(uint));
+
+                [DllImport("dwmapi.dll", CharSet = CharSet.Unicode, PreserveSig = false)]
+                static extern void DwmSetWindowAttribute(IntPtr hwnd,
+                                                 DWMWINDOWATTRIBUTE attribute,
+                                                 ref DWM_WINDOW_CORNER_PREFERENCE pvAttribute,
+                                                 uint cbAttribute);
+            }
 
             this.MouseLeftButtonDown += MainWindows_MouseLeftButtonDown;
             this.Loaded += Load;
@@ -68,12 +80,6 @@ namespace WpfApp1
             DWMWCP_ROUND = 2,
             DWMWCP_ROUNDSMALL = 3
         }
-
-        [DllImport("dwmapi.dll", CharSet = CharSet.Unicode, PreserveSig = false)]
-        internal static extern void DwmSetWindowAttribute(IntPtr hwnd,
-                                                         DWMWINDOWATTRIBUTE attribute,
-                                                         ref DWM_WINDOW_CORNER_PREFERENCE pvAttribute,
-                                                         uint cbAttribute);
         void MainWindows_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
@@ -231,6 +237,9 @@ namespace WpfApp1
         
         void Load(object sender, RoutedEventArgs e)
         {
+            Page2 page2 = new Page2();
+            Panel.Navigate(page2);
+
             if (brcl_file.Exists == false)
             {
                 Directory.CreateDirectory(brcl_file.FullName);
@@ -239,6 +248,12 @@ namespace WpfApp1
             {
                 File.WriteAllText(op_file.FullName, "6000" + "\n" + "1920" + "\n" +"1080");
             }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Page2 page2 = new Page2();
+            Panel.Navigate(page2);
         }
     }
 }
