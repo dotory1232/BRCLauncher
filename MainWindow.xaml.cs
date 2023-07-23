@@ -123,7 +123,7 @@ namespace WpfApp1
                 );
 
                 // 다운로드할 파일 URL
-                string url = "https://github.com/ButterackingClient/ButterackingClient/releases/download/untagged-019d37228ff2da8917d7/brclient.ziphttps://github.com/ButterackingClient/ButterackingClient/releases/download/untagged-019d37228ff2da8917d7/brclient.zip";
+                string url = "https://github.com/ButterackingClient/ButterackingClient/releases/download/official/brclient.zip";
 
                 // 다운로드할 파일 경로 및 이름
                 string downloadPath = System.IO.Path.Combine(minecraftVersionsPath, "Butteracking.Client.zip");
