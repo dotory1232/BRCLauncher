@@ -17,11 +17,14 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Rectangle HorizontalAlignment="Left" Height="292" VerticalAlignment="Center" Width="320" Fill="#FF1F1F1F" RadiusY="15" RadiusX="15" Margin="30,0,0,0"/>
-            <Label HorizontalAlignment="Left" Margin="45,62,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="/WpfApp1;component\Fonts\#Pretendard Medium" Foreground="White" Content="Burtteraking Launcher"/>
-            <Label Content="2023  7  05" HorizontalAlignment="Left" Margin="45,35,0,0" VerticalAlignment="Top" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
-            <Rectangle HorizontalAlignment="Center" Height="292" VerticalAlignment="Center" Width="320" Fill="#FF171717" RadiusY="15" RadiusX="15"/>
+            <Label HorizontalAlignment="Left" Margin="45,62,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard" Foreground="White" Content="BRL 0.2 Release"/>
+            <Label Content="2023  7  23" HorizontalAlignment="Left" Margin="45,35,0,0" VerticalAlignment="Top" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
+            <Rectangle HorizontalAlignment="Center" Height="292" VerticalAlignment="Center" Width="320" Fill="#FF1F1F1F" RadiusY="15" RadiusX="15"/>
             <Rectangle HorizontalAlignment="Left" Height="292" VerticalAlignment="Center" Width="320" Fill="#FF171717" RadiusY="15" RadiusX="15" Margin="748,0,0,0"/>
-            <Label HorizontalAlignment="Left" Margin="45,103,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="/WpfApp1;component\Fonts\#Pretendard Light" Foreground="White" Content="Burtteraking Launcher&#10;Beta Open. "/>
+            <Label HorizontalAlignment="Left" Margin="45,103,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard Light" Foreground="White" Content="Bug fixed"/>
+            <Label HorizontalAlignment="Left" Margin="409,62,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard" Foreground="White" Content="Burtteraking Launcher"/>
+            <Label Content="2023  7  05" HorizontalAlignment="Left" Margin="409,35,0,0" VerticalAlignment="Top" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard Light" Foreground="#FFD2D2D2" FontSize="14"/>
+            <Label HorizontalAlignment="Left" Margin="409,103,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard Light" Foreground="White" Content="Burtteraking Launcher&#xA;Beta Open. "/>
         </Grid>
     </Grid>
 </Page>

@@ -17,8 +17,8 @@
             </Image.BitmapEffect>
         </Image>
         <Rectangle HorizontalAlignment="Center" Height="72" Stroke="Black" VerticalAlignment="Top" Width="1098" Fill="Black"/>
-        <Label Content="Butteracking" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="Pretendard Black" Foreground="White"/>
-        <Button x:Name="Play" Content="Launch" HorizontalAlignment="Center" Margin="0,152,0,0" VerticalAlignment="Top" Height="76" Width="294" Background="#FF6B0DF9" Foreground="White" FontSize="30" FontFamily="Pretendard SemiBold" BorderBrush="{x:Null}" BorderThickness="2,2,2,2" Click="Button_Click">
+        <Label Content="Butteracking" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard Black" Foreground="White"/>
+        <Button x:Name="Play" Content="Launch" HorizontalAlignment="Center" Margin="0,152,0,0" VerticalAlignment="Top" Height="76" Width="294" Background="#FF6B0DF9" Foreground="White" FontSize="30" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard SemiBold" BorderBrush="{x:Null}" BorderThickness="2,2,2,2" Click="Button_Click">
 
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -41,10 +41,10 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label Content="Launcher" HorizontalAlignment="Left" Margin="208,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="Pretendard" Foreground="White"/>
+        <Label Content="Launcher" HorizontalAlignment="Left" Margin="208,17,0,0" VerticalAlignment="Top" FontSize="28" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard" Foreground="White"/>
         <Rectangle x:Name="CloseButton" HorizontalAlignment="Left" Height="35" Margin="1040,20,0,0" VerticalAlignment="Top" Width="35" Fill="#FF4E4E4E" RadiusX="5" RadiusY="5"/>
         <Image HorizontalAlignment="Left" Height="60" Margin="21,360,0,0" VerticalAlignment="Top" Width="60"/>
-        <Button Content="Home" HorizontalAlignment="Left" Margin="402,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard" Click="Button_Click_2">
+        <Button Content="Home" HorizontalAlignment="Left" Margin="402,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard" Click="Button_Click_2" Cursor="Hand">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -66,7 +66,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Setting" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="76" FontSize="18" FontFamily="Pretendard" Click="Button_Click_1">
+        <Button Content="Setting" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="76" FontSize="18" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard" Click="Button_Click_1" Cursor="Hand">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
@@ -88,7 +88,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="About" HorizontalAlignment="Left" Margin="628,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="Pretendard">
+        <Button Content="About" HorizontalAlignment="Left" Margin="628,16,0,0" VerticalAlignment="Top" Height="44" Background="{x:Null}" Foreground="#FFB5B5B5" BorderBrush="{x:Null}" Width="68" FontSize="18" FontFamily="/Butteracking Launcher;component\Fonts\#Pretendard">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="15"/>
